@@ -21,20 +21,21 @@ const resetInput = (elem) => {
     elem.nextElementSibling.classList.add('hidden')
 }
 
+const invalidateInput = (elem) => {
+    elem.classList.add('invalid')
+    elem.nextElementSibling.classList.remove('hidden')
+    isValidForm = false
+}
+
 const validateInput = () => {
     isValidForm = true
     if (!inputName.value) {
-        inputName.classList.add('invalid')
-        inputName.nextElementSibling.classList.remove('hidden')
-        isValidForm = false
+        invalidateInput(inputName)
     }
 
     if (!isValidEmail(inputEmail.value)) {
-        inputEmail.classList.add('invalid')
-        inputEmail.nextElementSibling.classList.remove('hidden')
-        isValidForm = false
+        invalidateInput(inputEmail)
     }
-
 }
 
 form.addEventListener('submit', (e) => {
