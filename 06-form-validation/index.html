@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="contact-us">
+      <h1>Contact us - Front Beginners</h1>
+      <p>
+        Leave your message bellow. We are happy to keep touch!!!
+      </p>
+    </div>
+
+    <form>
+      <div class="inputField">
+        <label>Full name:</label>
+        <input name="name" placeholder="Enter your name...">
+        <p class="error hidden">Name is required.</p>
+      </div>
+
+      <div class="inputField">
+        <label>Email:</label>
+        <input name="email" placeholder="Enter your email...">
+        <p class="error hidden">Email is invalid.</p>
+      </div>
+
+      <hr/>
+
+      <button>Submit</button>
+    </form>
+
+    <div class="message hidden">
+      <h2>Thank you for your contact.</h2>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
