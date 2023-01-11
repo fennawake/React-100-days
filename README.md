@@ -13,7 +13,7 @@ In parallel to this study I am also following other contents and training to dee
 6.  Form validation (vanilla js)
 7.  Git Hub
 8.  useReducer (react)
-9.  Request API with Axios (react)
-    9.1 Create a request with Axios
-    9.2 Create a helper with Axios
-    9.3 Create a  customn hook with Axios
+9.  Request API with Axios (react)<br/>
+    9.1 Create a request with Axios <br/>
+    9.2 Create a helper with Axios<br/>
+    9.3 Create a  customn hook with Axios<br/>
